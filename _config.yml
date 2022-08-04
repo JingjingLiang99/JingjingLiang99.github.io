@@ -6,7 +6,6 @@ description:  Data cruncher, Passionate explorer and much more .
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
-street_address: 216 E Cripe St
 city: South Bend
 state: IN
 zip_code: 46637
