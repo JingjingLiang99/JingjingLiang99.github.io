@@ -2,7 +2,7 @@
 layout: home
 title: Home
 landing-title: 
-'Hi, my name is Jingjing Up<br /> Have a look around'
+'Hi, my name is Jingjing'
 description: null
 image: null
 author: null
