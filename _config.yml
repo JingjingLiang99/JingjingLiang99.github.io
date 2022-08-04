@@ -1,15 +1,15 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+title: Jingjing
+subtitle: Liang
+email: jliang2@nd.edu
+description:  Data cruncher, Passionate explorer and much more .
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
+street_address: 216 E Cripe St
+city: South Bend
+state: IN
+zip_code: 46637
 country: United States of America
 phone: (716) 555-5555
 
@@ -22,14 +22,9 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/andrewbanchich
-  GitLab:
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
-  Instagram:
-  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-  Twitter: https://twitter.com/andrewbanchich
-  Facebook:
-  Slack:
+  GitHub: https://github.com/JingjingLiang99
+  LinkedIn: https://www.linkedin.com/in/jingjing-liang-2201361a3/
+
 
 # build settings
 markdown: kramdown
