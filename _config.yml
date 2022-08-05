@@ -30,9 +30,13 @@ markdown: kramdown
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 
 sass:
   style: compressed
+  
+include:
+  - _menus
 
 exclude:
 - "*.gemspec"
