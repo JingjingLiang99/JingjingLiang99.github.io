@@ -28,7 +28,7 @@
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('pointer-events', 'none');
-			background-color: #3979db;
+			background-color: #ffaaaa;
 			content: '';
 			display: block;
 			height: 100%;
