@@ -37,6 +37,7 @@ sass:
   
 include:
   - _menus
+  - _posts
 
 exclude:
 - "*.gemspec"
