@@ -2,7 +2,7 @@
 title: "Homework 1"
 author: "Jingjing Liang"
 format:
-  html:
+  html: https://jingjingliang99.github.io/_posts/linear_programming
     theme: united
     toc: true
     toc-location: left
