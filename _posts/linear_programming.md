@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Linear programming
+title: Etiam
+description: 
+image: 
 ---
 
 ```{r setup, include=FALSE}
