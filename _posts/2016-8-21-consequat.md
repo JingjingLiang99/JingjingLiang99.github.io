@@ -10,9 +10,8 @@ custom_css: post
   }
 </style>
 
-<body> 
-{background-color: #FFFFFF;}
-</body>
+   <body style="background-color:grey;">
+   </body>
 
 <link rel="stylesheet" href="../assets/css/post.css">
 
