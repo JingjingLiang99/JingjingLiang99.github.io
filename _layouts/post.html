@@ -12,6 +12,13 @@
 
     {% include header.html %}
 
+<head>
+	
+{% for css_name in page.extra_css %}
+    <link rel="stylesheet" href="{{ _post }}">
+{% endfor %}
+	
+</head>
 
 <!-- Main -->
 <div id="main" class="alt">
@@ -24,11 +31,6 @@
       <span>{{page.description}}</span>
 		</header>
 		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
-		{% if page.custom_css %}
-			{% for stylesheet in page.custom_css %}
-			<link rel="stylesheet" href="{{ site.baseurl }}/_sass/{{ stylesheet }}.css">
-			{% endfor %}
-		{% endif %}
 		<p>{{ content }}</p>
 	</div>
 </section>
