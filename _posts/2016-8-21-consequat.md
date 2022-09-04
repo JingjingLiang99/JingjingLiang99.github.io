@@ -4,6 +4,15 @@ title: Consequat
 custom_css: post
 ---
 <link rel="stylesheet" href="../_sass/base/_post.scss">
+
+<head>
+<style type="text/css">
+.custom {
+ color: black;
+}
+</style>
+</head>
+
 <body style="background-color: white;">
 </body>
 
