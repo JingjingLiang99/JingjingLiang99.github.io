@@ -5,17 +5,9 @@ custom_css: post
 ---
 <link rel="stylesheet" href="../_sass/base/_post.scss">
 
-<head>
-<style type="text/css">
-.custom {
- color: black;
-}
-</style>
-</head>
-
 <body style="background-color: white;">
-<p style="color:black">
 </body>
+<p style="color:black">
 
 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
 Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
