@@ -3,7 +3,7 @@ layout: post
 title: Consequat
 custom_css: post
 ---
-<body text="#ffffff" link="#ff0000" vlink="#ff0000" alink="#ff0000">
+<link rel="stylesheet" href="../_sass/base/_post.scss">
 <body style="background-color: white;">
 </body>
 
