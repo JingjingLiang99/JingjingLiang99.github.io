@@ -3,12 +3,13 @@ layout: post
 title: Consequat
 custom_css: post
 ---
-
+<head>
 <style type="text/css">
 .custom {
  color: black;
 }
 </style>
+</head>
 
 <body style="background-color: white;">
 </body>
