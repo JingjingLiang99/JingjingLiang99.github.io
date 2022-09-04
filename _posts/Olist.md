@@ -2,6 +2,7 @@
 layout: project
 title: Olist E-commerce
 image: assets/images/pexels-rodnae-productions-7310202.jpg
+description: tableau visualization and customer analysis using R
 ---
 <p style="color:black">
 
