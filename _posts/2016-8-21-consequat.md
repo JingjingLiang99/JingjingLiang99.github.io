@@ -14,6 +14,7 @@ custom_css: post
 </head>
 
 <body style="background-color: white;">
+<p style="color:black">
 </body>
 
 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
