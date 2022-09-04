@@ -3,10 +3,6 @@ layout: project
 title: Consequat
 custom_css: post
 ---
-<link rel="stylesheet" href="../_sass/base/_post.scss">
-
-<body style="background-color: white;">
-</body>
 <p style="color:black">
 
 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
