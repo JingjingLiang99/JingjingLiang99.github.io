@@ -77,7 +77,7 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
+		background: #808080;
 		border: none;
 		border-radius: 0;
 		color: inherit;
@@ -103,7 +103,7 @@
 		position: relative;
 
 		&:before {
-			color: _palette(border);
+			color: #808080;
 			content: '\f078';
 			display: block;
 			height: _size(element-height);
@@ -153,7 +153,7 @@
 			position: relative;
 
 			&:before {
-				background: _palette(border-bg);
+				background: #808080;
 				content: '';
 				display: inline-block;
 				height: (_size(element-height) * 0.6);
