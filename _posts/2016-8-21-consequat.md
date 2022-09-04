@@ -10,6 +10,10 @@ custom_css: post
   }
 </style>
 
+<body> 
+{background-color: #FFFFFF;}
+</body>
+
 <link rel="stylesheet" href="../assets/css/post.css">
 
 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
