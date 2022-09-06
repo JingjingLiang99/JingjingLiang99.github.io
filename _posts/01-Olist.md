@@ -2,7 +2,7 @@
 layout: project
 title: Olist E-commerce
 image: assets/images/01-Olist-banner.jpg
-description: tableau visualization and customer analysis using R
+description: Tableau visualization and customer analysis using R
 ---
 <p style="color:black">
 
