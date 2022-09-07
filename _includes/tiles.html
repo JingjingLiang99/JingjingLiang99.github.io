@@ -1,6 +1,4 @@
-{% if 'project' == site.tiles-source %}
-    {% assign tiles = site.project %}
-{% endif %}
+{% assign tiles = site.project %}
 <section id="one" class="tiles">
   {% for tile in tiles limit:site.tiles-count %}
   <article>
