@@ -14,7 +14,7 @@ phone: (574) 314-4849
 
 # homepage tiles
 tiles-source: "../_posts" # accepts "posts" or "pages"
-tiles-count: 6
+tiles-count: 2
 
 # social settings (key must match name of font awesome icon)
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands
