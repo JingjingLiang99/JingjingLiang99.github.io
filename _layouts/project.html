@@ -17,7 +17,8 @@
     {% include header.html %}
 <p style="color:black">
 	
-<body style="background-color: white;">
+<body style="background-color: white; color:black">
+<body text="black">
 	
 <!-- Main -->
 <div id="main" class="alt">
@@ -30,7 +31,7 @@
       <span style="color: #333333;font-weight:bold ;font-size: 18.0pt;">{{page.description}}</span>
 		</header>
 		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
-		<p styple = "color: black">{{ content }}</p>
+		<p style = "color: black">{{ content }}</p>
 	</div>
 </section>
 
