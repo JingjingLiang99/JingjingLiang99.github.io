@@ -12,8 +12,8 @@
   </article>
   {% endif %}
   {% endfor %}
-  {% for page in site.pages limit:site.tiles-count %}
-  {% if site.tiles-source == 'pages' and page.show_tile == false %}
+  {% for page in site.pages limit:2 %}
+  {% if site.tiles-source == 'pages' and page.show_tile == true %}
   <article>
     <span class="image">
       <img src="{{ page.image }}" alt="" />
