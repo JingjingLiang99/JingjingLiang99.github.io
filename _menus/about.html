@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: About Me
 nav-menu: true
 ---
@@ -15,6 +15,7 @@ nav-menu: true
 <!-- Navigation Menu Buttons -->
 <ul class="actions fit">
 	<li><a href="#" class="button special fit" id='Education'    onclick="document.getElementById('AboutContentsDiv').innerHTML=document.getElementById('EducationDetailsMD').innerHTML;">Education</a></li>
+	<li><a href="#" class="button special fit" id='WorkExperience'       onclick="document.getElementById('AboutContentsDiv').innerHTML=document.getElementById('WorkExperienceMD').innerHTML;">Work Experience</a></li>
 	<li><a href="#" class="button special fit" id='Skills'       onclick="document.getElementById('AboutContentsDiv').innerHTML=document.getElementById('SkillsDetailsMD').innerHTML;">Skills</a></li>
 </ul>
 
@@ -47,7 +48,22 @@ nav-menu: true
 					</tr>
 				</table>
 </div>
-
+		
+<div id='WorkExperienceMD' style="display:none;">
+				<table style="width:100%">
+					<tr>
+						<td style="text-align:center"><img src="../assets/images/work/groupm.png" alt=""  style="width:100px;"></td>
+						<td style="vertical-align:middle"><b>GroupM</b><br>
+						August 2022 -  Present<br><i>Programmatic Advertising Intern</i></td> 
+					</tr>
+					<tr>
+						<td style="text-align:center"><img src="../assets/images/work/ipsos.png" alt=""  style="width:100px;"></td>
+						<td style="vertical-align:middle"><b>Ipsos</b><br>
+						September 2021 -  January 2022<br><i>Social Intelligence & Analytics Intern</i></td> 
+					</tr>					
+				</table>
+</div>
+		
 <!-- Display Div-->
 <div id="AboutContentsDiv"></div>
 <script>document.getElementById('AboutContentsDiv').innerHTML=document.getElementById('EducationDetailsMD').innerHTML;</script>
