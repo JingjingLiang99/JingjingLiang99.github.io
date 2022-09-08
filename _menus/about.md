@@ -47,7 +47,7 @@ nav-menu: true
 </div>		
 <div id="Skills">
 <header class="major">
-<h2 style="color:black">Skills</h2>
+<h2>Skills</h2>
 </header>
 				<table style="width:100%">
 					<tr>
@@ -61,8 +61,9 @@ nav-menu: true
 						R Programming<br>STATA</td> 
 					</tr>				
 				</table>
-</div>		
-		
+</div>	
+
+<br>		
 <p style="color:black!important"><center><a href="../assets/CV.pdf" class="button icon fa-download" target="_blank">Download CV</a></center></p>
 
 </div>	
