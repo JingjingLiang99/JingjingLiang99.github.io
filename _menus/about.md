@@ -11,6 +11,7 @@ nav-menu: true
 	<div class="inner">
 	Hi! My name is Jingjing. I am an aspiring data analyst who is interested in marketing technology and predictive analytics. I am currently in the Master of Science in Business Analytics Program at the University of Notre Dame to take my analytical ability and business sense to the next level. I excel in data visualization, with several experience of developing dashboards and reports for companies such as GroupM and Ipsos.
 <br>
+<br>
 <!-- Content -->
 <div id="Education">
 <header class="major">
