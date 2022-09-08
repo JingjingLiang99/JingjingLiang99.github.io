@@ -17,13 +17,13 @@ nav-menu: true
 </header>
 				<table style="width:100%">
 					<tr>
-						<td style="text-align:center"><img src="../assets/images/education/notre_dame.png" alt=""  style="width:100px;"></td>
-						<td style="vertical-align:center"><b>Master of Science in Business Analytics</b><br>
+						<td align="center"><img src="../assets/images/education/notre_dame.png" alt=""  style="width:100px;"></td>
+						<td align="center"><b>Master of Science in Business Analytics</b><br>
 						August 2022 -  Present<br><i>University of Notre Dame, United States</i></td> 
 					</tr>
 					<tr>
-						<td style="text-align:center"><img src="../assets/images/education/uva.png" alt=""  style="width:100px;"></td>
-						<td style="vertical-align:center"><b>Economics and Management</b><br>
+						<td align="center"><img src="../assets/images/education/uva.png" alt=""  style="width:100px;"></td>
+						<td align="center"><b>Economics and Management</b><br>
 						September 2021 -  January 2022<br><i>University of Amsterdam, Netherlands</i></td> 
 					</tr>					
 				</table>
@@ -34,13 +34,13 @@ nav-menu: true
 </header>
 				<table style="width:100%">
 					<tr>
-						<td style="text-align:center"><img src="../assets/images/work/groupm.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:center"><b>GroupM</b><br>
+						<td align="center"><img src="../assets/images/work/groupm.png" alt=""  style="width:100px;"></td>
+						<td align="center"><b>GroupM</b><br>
 						August 2022 -  Present<br><i>Programmatic Advertising Intern</i></td> 
 					</tr>
 					<tr>
-						<td style="text-align:center"><img src="../assets/images/work/ipsos.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:center"><b>Ipsos</b><br>
+						<td align="center"><img src="../assets/images/work/ipsos.png" alt=""  style="width:100px;"></td>
+						<td align="center"><b>Ipsos</b><br>
 						September 2021 -  January 2022<br><i>Social Intelligence & Analytics Intern</i></td> 
 					</tr>					
 				</table>
@@ -51,13 +51,13 @@ nav-menu: true
 </header>
 				<table style="width:100%">
 					<tr>
-						<td style="text-align:center"><img src="../assets/images/skills/dataviz.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:center"><b>Data Visualization</b><br>
+						<td align="center"><img src="../assets/images/skills/dataviz.png" alt=""  style="width:100px;"></td>
+						<td align="center"><b>Data Visualization</b><br>
 						Tableau<br>PowerBI</td> 
 					</tr>
 					<tr>
-						<td style="text-align:center"><img src="../assets/images/skills/stats.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:center"><b>Statistics</b><br>
+						<td align="center"><img src="../assets/images/skills/stats.png" alt=""  style="width:100px;"></td>
+						<td align="center"><b>Statistics</b><br>
 						R Programming<br>STATA</td> 
 					</tr>				
 				</table>
@@ -69,4 +69,3 @@ nav-menu: true
 </div>	
 </section>
 	
-    {% exclude footer.html %}
