@@ -13,34 +13,34 @@ nav-menu: true
 <!-- Content for  Button -->
 <div id="Education">
 <header class="major">
-<h2 style="color:black">Education</h2>
+<h2>Education</h2>
 </header>
 				<table style="width:100%">
 					<tr>
 						<td style="text-align:center"><img src="../assets/images/education/notre_dame.png" alt=""  style="width:100px;"></td>
-						<td style="vertical-align:middle；color:black"><b style = "color:black">Master of Science in Business Analytics</b><br>
+						<td style="vertical-align:middle"><b>Master of Science in Business Analytics</b><br>
 						August 2022 -  Present<br><i>University of Notre Dame, United States</i></td> 
 					</tr>
 					<tr>
 						<td style="text-align:center"><img src="../assets/images/education/uva.png" alt=""  style="width:100px;"></td>
-						<td style="vertical-align:middle; color:black"><b style = "color:black">Economics and Management</b><br>
+						<td style="vertical-align:middle"><b>Economics and Management</b><br>
 						September 2021 -  January 2022<br><i>University of Amsterdam, Netherlands</i></td> 
 					</tr>					
 				</table>
 </div>
 <div id="WorkExperience">
 <header class="major">
-<h2 style="color:black">Work Experience</h2>
+<h2>Work Experience</h2>
 </header>
 				<table style="width:100%">
 					<tr>
 						<td style="text-align:center"><img src="../assets/images/work/groupm.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:middle; color:black"><b style = "color:black">GroupM</b><br>
+						<td style="text-align:middle"><b>GroupM</b><br>
 						August 2022 -  Present<br><i>Programmatic Advertising Intern</i></td> 
 					</tr>
 					<tr>
 						<td style="text-align:center"><img src="../assets/images/work/ipsos.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:middle; color:black"><b style = "color:black">Ipsos</b><br>
+						<td style="text-align:middle"><b>Ipsos</b><br>
 						September 2021 -  January 2022<br><i>Social Intelligence & Analytics Intern</i></td> 
 					</tr>					
 				</table>
@@ -52,12 +52,12 @@ nav-menu: true
 				<table style="width:100%">
 					<tr>
 						<td style="text-align:center"><img src="../assets/images/skills/dataviz.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:middle；color:black"><b style = "color:black">Data Visualization</b><br>
+						<td style="text-align:middle"><b>Data Visualization</b><br>
 						Tableau<br>PowerBI</td> 
 					</tr>
 					<tr>
 						<td style="text-align:center"><img src="../assets/images/skills/stats.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:middle；color:black"><b style = "color:black">Statistics</b><br>
+						<td style="text-align:middle"><b>Statistics</b><br>
 						R Programming<br>STATA</td> 
 					</tr>				
 				</table>
