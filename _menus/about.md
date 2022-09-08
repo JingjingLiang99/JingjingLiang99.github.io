@@ -6,8 +6,12 @@ nav-menu: true
 <!-- Main -->
 <div id="main" class="alt">
 
+<!-- One -->
+<section id="one">
+	<div class="inner">
+
 <!-- Content for  Button -->
-<div id="Education"; class="inner">
+<div id="Education">
 <header class="major">
 <h2 style="color:black">Education</h2>
 </header>
@@ -24,7 +28,7 @@ nav-menu: true
 					</tr>					
 				</table>
 </div>
-<div id="WorkExperience"; class="inner">
+<div id="WorkExperience">
 <header class="major">
 <h2 style="color:black">Work Experience</h2>
 </header>
@@ -42,7 +46,7 @@ nav-menu: true
 				</table>
 </div>		
 <div id="Skills">
-<header class="major"; class="inner">
+<header class="major">
 <h2 style="color:black">Skills</h2>
 </header>
 				<table style="width:100%">
@@ -61,5 +65,5 @@ nav-menu: true
 		
 <p style="color:black!important"><center><a href="../assets/CV.pdf" class="button icon fa-download" target="_blank">Download CV</a></center></p>
 
-
+</div>	
 </section>
