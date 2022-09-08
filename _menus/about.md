@@ -9,7 +9,7 @@ nav-menu: true
 <!-- One -->
 <section id="one">
 	<div class="inner">
-
+Hi! My name is Jingjing. I am an aspiring data analyst who is interested in marketing technology and predictive analytics. I excel in data visualization, with several experience of developing dashboards and reports for companies such as GroupM and Ipsos
 <!-- Content for  Button -->
 <div id="Education">
 <header class="major">
@@ -40,7 +40,7 @@ nav-menu: true
 					</tr>
 					<tr>
 						<td align="center"><img src="../assets/images/work/ipsos.png" alt=""  style="width:100px;"></td>
-						<td align="center"><b>Ipsos</b><br>
+						<td align="center"><b>Ipsos Group</b><br>
 						September 2021 -  January 2022<br><i>Social Intelligence & Analytics Intern</i></td> 
 					</tr>					
 				</table>
