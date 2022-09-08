@@ -1,6 +1,6 @@
 ---
-layout: project
-title: About me
+layout:post
+title:About me
 nav-menu: true
 ---
 <!-- Main -->
