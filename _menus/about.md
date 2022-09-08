@@ -34,13 +34,13 @@ nav-menu: true
 </header>
 				<table style="width:100%">
 					<tr>
-						<td style="text-align:middle"><img src="../assets/images/work/groupm.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:left"><b>GroupM</b><br>
+						<td style="text-align:center"><img src="../assets/images/work/groupm.png" alt=""  style="width:100px;"></td>
+						<td style="text-align:center"><b>GroupM</b><br>
 						August 2022 -  Present<br><i>Programmatic Advertising Intern</i></td> 
 					</tr>
 					<tr>
-						<td style="text-align:middle"><img src="../assets/images/work/ipsos.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:left"><b>Ipsos</b><br>
+						<td style="text-align:center"><img src="../assets/images/work/ipsos.png" alt=""  style="width:100px;"></td>
+						<td style="text-align:center"><b>Ipsos</b><br>
 						September 2021 -  January 2022<br><i>Social Intelligence & Analytics Intern</i></td> 
 					</tr>					
 				</table>
@@ -52,12 +52,12 @@ nav-menu: true
 				<table style="width:100%">
 					<tr>
 						<td style="text-align:center"><img src="../assets/images/skills/dataviz.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:left"><b>Data Visualization</b><br>
+						<td style="text-align:center"><b>Data Visualization</b><br>
 						Tableau<br>PowerBI</td> 
 					</tr>
 					<tr>
 						<td style="text-align:center"><img src="../assets/images/skills/stats.png" alt=""  style="width:100px;"></td>
-						<td style="text-align:left"><b>Statistics</b><br>
+						<td style="text-align:center"><b>Statistics</b><br>
 						R Programming<br>STATA</td> 
 					</tr>				
 				</table>
@@ -68,3 +68,5 @@ nav-menu: true
 
 </div>	
 </section>
+	
+    {% exclude footer.html %}
