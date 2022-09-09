@@ -53,7 +53,7 @@ nav-menu: true
 					</tr>					
 				</table>
 </div>		
-<div id="Skills">
+
 <header class="major">
 <h2>Skills</h2>
 </header>
@@ -61,11 +61,8 @@ nav-menu: true
 			<li><b>Business Intelligence:</b> Tableau, Power BI</li>
 			<li><b>Programming Languages:</b> Python, R</li>
 			<li><b>Databases:</b> SQL </li>
-</div>	
 
 <br>		
 <p style="color:black!important"><center><a href="../assets/CV.pdf" class="button icon fa-download" target="_blank">Download CV</a></center></p>
 
-</div>	
-</section>
 	
