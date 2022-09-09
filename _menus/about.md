@@ -1,6 +1,6 @@
 ---
-layout:landing
-title:About me
+layout: landing
+title: About me
 image: ../assets/images/about_banner.jpg
 nav-menu: true
 ---
