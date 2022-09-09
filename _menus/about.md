@@ -27,7 +27,12 @@ nav-menu: true
 						<td align="center"><img src="../assets/images/education/uva.png" alt=""  style="width:100px;"></td>
 						<td align="center"><b>Economics and Management</b><br>
 						September 2021 -  January 2022<br><i>University of Amsterdam, Netherlands</i></td> 
-					</tr>					
+					</tr>
+					<tr>
+						<td align="center"><img src="../assets/images/education/swufe.png" alt=""  style="width:100px;"></td>
+						<td align="center"><b>Economics and Management</b><br>
+						September 2018 -  June 2022<br><i>Southwestern University of Finance and Economics, China</i></td> 
+					</tr>										
 				</table>
 </div>
 <div id="WorkExperience">
