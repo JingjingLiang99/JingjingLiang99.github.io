@@ -57,18 +57,10 @@ nav-menu: true
 <header class="major">
 <h2>Skills</h2>
 </header>
-				<table style="width:100%">
-					<tr>
-						<td align="center"><img src="../assets/images/skills/dataviz.png" alt=""  style="width:100px;"></td>
-						<td align="center"><b>Data Visualization</b><br>
-						Tableau<br>PowerBI</td> 
-					</tr>
-					<tr>
-						<td align="center"><img src="../assets/images/skills/stats.png" alt=""  style="width:100px;"></td>
-						<td align="center"><b>Statistics</b><br>
-						R Programming<br>STATA</td> 
-					</tr>				
-				</table>
+		<ul class="alt">
+			<li><b>Business Intelligence:</b> Tableau, Power BI</li>
+			<li><b>Programming Languages:</b> Python, R</li>
+			<li><b>Databases:</b> SQL </li>
 </div>	
 
 <br>		
