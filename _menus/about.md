@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: About me
-image: ../assets/images/iceland.jpg
+image: assets/images/iceland.jpg
 nav-menu: true
 ---
 <!-- Main -->
