@@ -65,4 +65,5 @@ nav-menu: true
 <br>		
 <p style="color:black!important"><center><a href="../assets/CV.pdf" class="button icon fa-download" target="_blank">Download CV</a></center></p>
 
+    {% include instagram.html %}
 	
