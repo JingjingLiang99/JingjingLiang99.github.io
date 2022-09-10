@@ -34,26 +34,10 @@
             </div>
         </section>
     {% include instagram.html %}
-	    
-fetch('https://feeds.behold.so/WG5Y2KlUoEUVOU7e8oyR')
-  .then(data => data.json())
-  .then(photos => {
-    photos.forEach(({
-      id,             // The post ID
-      mediaUrl,       // The image source
-      permalink,      // URL of the Instagram post
-      caption,        // Post caption
-      mediaType,      // 'IMAGE', 'VIDEO', or 'CAROUSEL_ALBUM'
-      thumbnailUrl,   // Only returned for video posts
-      timestamp,      // Post publish date,
-      children        // An array of CAROUSEL_ALBUM children. Each with id, mediaUrl, and mediaType
-    }) => {
 
-      // Step 3. Make magic happen...
-      
-    });
-  });
-	    
+<div data-behold-id="v1UXUfBhTjwsCncLwZP1"></div>
+<script src="https://w.behold.so/widget.js" type="module"></script>
+ 	    
 </body>
 
 </html>
