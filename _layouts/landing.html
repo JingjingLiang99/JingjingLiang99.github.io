@@ -36,6 +36,17 @@
 
     {{ content }}
 <script src='https://soulfoodtaqueria.herokuapp.com/token.js'></script>
+<script src="..assets/js/instafeed.min.js"></script>
+<div id="instafeed"></div>
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+      accessToken: 4c148662572ca3509a654f08b2e6a229
+    });
+    feed.run();
+</script>
+	    
+	    
     {% include instagram.html %}
 </body>
 
