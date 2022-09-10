@@ -35,6 +35,10 @@ plugins:
 sass:
   style: compressed
   
+instagram_user_id: northfog
+instagram_client_id: 487609536578751
+instagram_access_token: 4c148662572ca3509a654f08b2e6a229
+  
 include:
   - _menus
   - _posts
