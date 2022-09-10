@@ -33,21 +33,27 @@
                 </div>
             </div>
         </section>
-
-    {{ content }}
-<script src='https://soulfoodtaqueria.herokuapp.com/token.js'></script>
-<script src="..assets/js/instafeed.min.js"></script>
-<div id="instafeed"></div>
-
-<script type="text/javascript">
-    var feed = new Instafeed({
-      accessToken: 4c148662572ca3509a654f08b2e6a229
-    });
-    feed.run();
-</script>
-	    
-	    
     {% include instagram.html %}
+	    
+fetch('https://feeds.behold.so/WG5Y2KlUoEUVOU7e8oyR')
+  .then(data => data.json())
+  .then(photos => {
+    photos.forEach(({
+      id,             // The post ID
+      mediaUrl,       // The image source
+      permalink,      // URL of the Instagram post
+      caption,        // Post caption
+      mediaType,      // 'IMAGE', 'VIDEO', or 'CAROUSEL_ALBUM'
+      thumbnailUrl,   // Only returned for video posts
+      timestamp,      // Post publish date,
+      children        // An array of CAROUSEL_ALBUM children. Each with id, mediaUrl, and mediaType
+    }) => {
+
+      // Step 3. Make magic happen...
+      
+    });
+  });
+	    
 </body>
 
 </html>
