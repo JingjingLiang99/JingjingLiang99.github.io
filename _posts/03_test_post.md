@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: Global warming visualization
 image: assets/images/03-GlobalWarming-banner.jpg
 description: Tableau visualization
