@@ -31,7 +31,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 
 <div>
 
-```{=html}
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
