@@ -1,3 +1,10 @@
+---
+layout: project
+title: test 2
+image: assets/images/02-Renting-banner.jpg
+description: Text data cleaning and machine learning using Python
+---
+
 ```python
 import pandas as pd
 import numpy as np
