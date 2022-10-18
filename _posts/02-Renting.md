@@ -192,7 +192,7 @@ Because each photo URL is stored in a nested list in the dataset, I calculated t
 With the above variables, I investigated the distribution of each variable and their correlation to each other.
 The variables are not obviously skewed, which leaves me with enough sample data. Some amenities are high correlated with each other, such as Doorman to Wood floor and Doorman to Fitness center. I furthur look into the factors effecting deal using machine learning.
 ![Variable distribution](/assets/images/Renting-rate-analysis/output_80_0.png)
-![Correlation matrix](JingjingLiang99.github.io/assets/images/Renting-rate-analysis/output_82_0.png)
+![Correlation matrix](/assets/images/Renting-rate-analysis/output_82_0.png)
 
 ## Machine learning
 Four models are implemented in this session: Logistic regression, Decision tree, Random forest and xgboost. All results suggest the number of photos, polarity of apartment description and number of bedrooms have high importance to settling a deal. By comparing the accuracy, precision and recall scores, the result from xgboost is the most ideal one. 
