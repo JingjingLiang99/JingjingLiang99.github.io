@@ -36,21 +36,6 @@ The number of bedrooms and bathrooms, and hardwood floors are top amenities that
 # Technical process
 Raw dataset:
 <div>
-
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-
 <table>
 <thead>
 <tr class="header">
@@ -175,16 +160,6 @@ Raw dataset:
 </table>
 
 </div>
-
-table 2
-|     | bathrooms | bedrooms | building_id                      | created          | description                                        | display_address     | features                                       | latitude | listing_id | longitude | manager_id                       | photos                                             | price  | street_address          | is_deal | gender | expected_price | followup |
-|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
-| 0   | 1.5       | 3        | 53a5b119ba8f7b61d4e010512e0dfc85 | 24/06/2016 7:54  | A Brand New 3 Bedroom 1.5 bath ApartmentEnjoy \... | Metropolitan Avenue | \[\]                                           | 40.7145  | 7211212    | -73.9425  | 5ba989232d0489da1b5f2c45f6688adc | \[https://photos.renthop.com/2/7211212_1ed4542\... | 3000.0 | 792 Metropolitan Avenue | 1       | female | 2700.0         | 13.0     |
-| 1   | 1         | 2        | c5c8a357cba207596b04d1afd1e4f130 | 12/06/2016 12:19 |                                                    | Columbus Avenue     | \[Doorman, Elevator, Fitness Center, Cat\...   | 40.7947  | 7150865    | -73.9667  | 7533621a882f71e25173b27e3139d83d | \[https://photos.renthop.com/2/7150865_be3306c\... | 5465.0 | 808 Columbus Avenue     | 0       | male   | 5200.0         | NaN      |
-| 2   | 1         | 1        | c3ba40552e2120b0acfc3cb5730bb2aa | 17/04/2016 3:26  | Top Top West Village location, beautiful Pre-w\... | W 13 Street         | \[Laundry In Building, Dishwasher, Hardwoo\... | 40.7388  | 6887163    | -74.0018  | d9039c43983f6e564b1482b273bd7b01 | \[https://photos.renthop.com/2/6887163_de85c42\... | 2850.0 | 241 W 13 Street         | 1       | male   | 2900.0         | NaN      |
-| 3   | 1         | 1        | 28d9ad350afeaab8027513a3e52ac8d5 | 18/04/2016 2:22  | Building Amenities - Garage - Garden - fitness\... | East 49th Street    | \[Hardwood Floors, No Fee\]                    | 40.7539  | 6888711    | -73.9677  | 1067e078446a7897d2da493d2f741316 | \[https://photos.renthop.com/2/6888711_6e660ce\... | 3275.0 | 333 East 49th Street    | 0       | female | 3500.0         | NaN      |
-| 4   | 1         | 4        | 0                                | 28/04/2016 1:32  | Beautifully renovated 3 bedroom flex 4 bedroom\... | West 143rd Street   | \[Pre-War\]                                    | 40.8241  | 6934781    | -73.9493  | 98e13ad4b495b9613cef886d79a6291f | \[https://photos.renthop.com/2/6934781_1fa4b41\... | 3350.0 | 500 West 143rd Street   | 0       | female | 3200.0         | 0.0      |
-
 
 ## Data cleaning
 Because machine learning models don't work well with NaN, they are dropped from the dataset. Outliers (5% percentile) are trimmed as well.
