@@ -4,8 +4,6 @@ title: Renting Rate Prediction
 image: assets/images/02-Renting-banner.jpg
 description: Text data cleaning and machine learning using Python
 ---
-<p style="color:black">
-
 ### Overview
 
 Can text mining apartment discriptions give insight to what renters are caring about their renting choice?
