@@ -162,17 +162,17 @@ Raw dataset:
 Because machine learning models don't work well with NaN, they are dropped from the dataset. Outliers (5% percentile) are trimmed as well.
 
 <h3 id="Feature engineering" style="color:black">Feature engineering</h3>
-The purpose of feature engineering is to extract the amenities such as "Elevator", "Doorman", and "Fitness center" in the features column, and turn them into binary variables to investigate their relationships with settling a deal.I first unravelled the list and used textblob to seperate them into phrases.The top ten frequent features are selected and turned into binary variable.
+The purpose of feature engineering is to extract the amenities such as "Elevator", "Doorman", and "Fitness center" in the features column, and turn them into binary variables to investigate their relationships with settling a deal.I first unravelled the list and used textblob to separate them into phrases.The top ten frequent features are selected and turned into binary variable.
 
 <h3 id="NLP analysis" style="color:black">NLP analysis</h3>
-The apartment description are seperated into sentences, phrases and the words. NLTK is used to calculate the polarity and subjectivity of each description with the average of each word. 
+The apartment description are separated into sentences, phrases and the words. NLTK is used to calculate the polarity and subjectivity of each description with the average of each word. 
 
 <h3 id="Number of photos" style="color:black">Number of photos</h3>
-Because each photo URL is stored in a nested list in the dataset, I calculated the lenth of each listing's photo URL and replaced null with 0.
+Because each photo URL is stored in a nested list in the dataset, I calculated the length of each listing's photo URL and replaced null with 0.
 
 <h3 id="Exploratory data analysis" style="color:black">Exploratory data analysis</h3>
 With the above variables, I investigated the distribution of each variable and their correlation to each other.
-The variables are not obviously skewed, which leaves me with enough sample data. Some amenities are high correlated with each other, such as Doorman to Wood floor and Doorman to Fitness center. I furthur look into the factors effecting deal using machine learning.
+The variables are not obviously skewed, which leaves me with enough sample data. Some amenities are high correlated with each other, such as Doorman to Wood floor and Doorman to Fitness center. I further look into the factors effecting deal using machine learning.
 ![Variable distribution](/assets/images/Renting-rate-analysis/output_80_0.png)
 ![Correlation matrix](/assets/images/Renting-rate-analysis/output_82_0.png)
 
