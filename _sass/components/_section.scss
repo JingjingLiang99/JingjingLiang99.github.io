@@ -114,6 +114,7 @@
 			body.is-ie & {
 				> :first-child {
 					&:after {
+						color: black;
 						max-width: 9em;
 					}
 				}
