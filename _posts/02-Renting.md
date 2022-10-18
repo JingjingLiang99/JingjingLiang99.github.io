@@ -200,4 +200,4 @@ Four models are implemented in this session: Logistic regression, Decision tree,
 ![Xgboost result](/assets/images/Renting-rate-analysis/output_109_0.png)
 
 #### See full codes in depository
-https://github.com/JingjingLiang99/Renting-rate-analysis
+[Renting rate analysis](https://github.com/JingjingLiang99/Renting-rate-analysis)
