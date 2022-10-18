@@ -52,7 +52,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <th><p></p></th>
 <th><p>bathrooms</p></th>
 <th><p>bedrooms</p></th>
-<th><p>building_id</p></th>
 <th><p>created</p></th>
 <th><p>description</p></th>
 <th><p>display_address</p></th>
@@ -75,7 +74,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <td><p>0</p></td>
 <td><p>1.5</p></td>
 <td><p>3</p></td>
-<td><p>53a5b119ba8f7b61d4e010512e0dfc85</p></td>
 <td><p>24/06/2016 7:54</p></td>
 <td><p>A Brand New 3 Bedroom 1.5 bath ApartmentEnjoy ...</p></td>
 <td><p>Metropolitan Avenue</p></td>
@@ -83,7 +81,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <td><p>40.7145</p></td>
 <td><p>7211212</p></td>
 <td><p>-73.9425</p></td>
-<td><p>5ba989232d0489da1b5f2c45f6688adc</p></td>
 <td><p>[https://photos.renthop.com/2/7211212_1ed4542...</p></td>
 <td><p>3000.0</p></td>
 <td><p>792 Metropolitan Avenue</p></td>
@@ -96,7 +93,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <td><p>1</p></td>
 <td><p>1</p></td>
 <td><p>2</p></td>
-<td><p>c5c8a357cba207596b04d1afd1e4f130</p></td>
 <td><p>12/06/2016 12:19</p></td>
 <td></td>
 <td><p>Columbus Avenue</p></td>
@@ -104,7 +100,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <td><p>40.7947</p></td>
 <td><p>7150865</p></td>
 <td><p>-73.9667</p></td>
-<td><p>7533621a882f71e25173b27e3139d83d</p></td>
 <td><p>[https://photos.renthop.com/2/7150865_be3306c...</p></td>
 <td><p>5465.0</p></td>
 <td><p>808 Columbus Avenue</p></td>
@@ -117,7 +112,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <td><p>2</p></td>
 <td><p>1</p></td>
 <td><p>1</p></td>
-<td><p>c3ba40552e2120b0acfc3cb5730bb2aa</p></td>
 <td><p>17/04/2016 3:26</p></td>
 <td><p>Top Top West Village location, beautiful Pre-w...</p></td>
 <td><p>W 13 Street</p></td>
@@ -125,7 +119,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <td><p>40.7388</p></td>
 <td><p>6887163</p></td>
 <td><p>-74.0018</p></td>
-<td><p>d9039c43983f6e564b1482b273bd7b01</p></td>
 <td><p>[https://photos.renthop.com/2/6887163_de85c42...</p></td>
 <td><p>2850.0</p></td>
 <td><p>241 W 13 Street</p></td>
@@ -138,7 +131,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <td><p>3</p></td>
 <td><p>1</p></td>
 <td><p>1</p></td>
-<td><p>28d9ad350afeaab8027513a3e52ac8d5</p></td>
 <td><p>18/04/2016 2:22</p></td>
 <td><p>Building Amenities - Garage - Garden - fitness...</p></td>
 <td><p>East 49th Street</p></td>
@@ -146,7 +138,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <td><p>40.7539</p></td>
 <td><p>6888711</p></td>
 <td><p>-73.9677</p></td>
-<td><p>1067e078446a7897d2da493d2f741316</p></td>
 <td><p>[https://photos.renthop.com/2/6888711_6e660ce...</p></td>
 <td><p>3275.0</p></td>
 <td><p>333 East 49th Street</p></td>
@@ -167,7 +158,6 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 <td><p>40.8241</p></td>
 <td><p>6934781</p></td>
 <td><p>-73.9493</p></td>
-<td><p>98e13ad4b495b9613cef886d79a6291f</p></td>
 <td><p>[https://photos.renthop.com/2/6934781_1fa4b41...</p></td>
 <td><p>3350.0</p></td>
 <td><p>500 West 143rd Street</p></td>
