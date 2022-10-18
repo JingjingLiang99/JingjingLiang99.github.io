@@ -100,6 +100,7 @@
 				letter-spacing: _font(letter-spacing-alt);
 				margin-bottom: 0;
 				text-transform: uppercase;
+				color:black;
 			}
 
 			body.is-ie & {
@@ -112,6 +113,7 @@
 				> h1 {
 					&:after {
 						max-width: 100% !important;
+						color: black;
 					}
 				}
 			}
