@@ -36,7 +36,7 @@ The number of bedrooms and bathrooms, and hardwood floors are top amenities that
 # Technical process
 Raw dataset:
 <div>
-<table>
+<table class="project">
 <thead>
 <tr class="header">
 <th><p></p></th>
