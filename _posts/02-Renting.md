@@ -140,7 +140,6 @@ Raw dataset:
 <td><p>4</p></td>
 <td><p>1</p></td>
 <td><p>4</p></td>
-<td><p>0</p></td>
 <td><p>28/04/2016 1:32</p></td>
 <td><p>Beautifully renovated 3 bedroom flex 4 bedroom...</p></td>
 <td><p>West 143rd Street</p></td>
