@@ -1,18 +1,18 @@
 ---
 layout: project
-title: Renting Rate Prediction
+title: Renting Rate Analysis
 image: assets/images/02-Renting-banner.jpg
 description: Text data cleaning and machine learning using Python
 ---
-## Overview
+# Overview
 
-Can text mining apartment discriptions give insight to what renters are caring about their renting choice?
+Can text mining apartment descriptions give insight to what renters are caring about their renting choice?
 
 In the real-estate industry, listing page of the apartment is what customers first see. How good it looks digitally and how attractive it reads has been a prominent role in a customer's decision. Real-estate businesses are looking to listing page elements to understand their customers' desires and experiences to identify their areas of opportunities.
 
 The dataset contains 50k inquiry of a real-estate agency. Each listing has information on the number of bathrooms and bedrooms, apartment description, amenities and photo URL. It has the inquirer's information such as gender, number of times they have followed up, and their expected price. And finally we can see if the deal has been made.
 
-## Outline
+# Outline
 
 -   Data cleaning
 -   NLP on apartment description: Can positive description boost the chance of a deal?
@@ -20,7 +20,7 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 -   Quantify number of photos: Can more number of photos boost the chance of a deal?
 -   Machine learning: How do the above variables affect renting behavior?
 
-## Tools
+# Tools
 
 -   Python
 -   NLTK
@@ -29,8 +29,12 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 -   numpy
 -   Matplotlib
 
-## Summary
-
+# Summary
+How many photos the listing has and how positive the description sounds has high importance to making a deal. The marketing team should check the listings without photos or have low positivity score, and using these criteria to promote them more efficiently. 
+The number of bedrooms and bathrooms, and hardwood floors are top amenities that affect customer decision. They should be placed at the front of the tags. 
+ 
+# Technical process
+Raw dataset:
 <div>
 
 <style scoped>
@@ -46,7 +50,7 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
         text-align: right;
     }
 </style>
-```
+
 <table>
 <thead>
 <tr class="header">
@@ -172,3 +176,24 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 
 </div>
 
+## Data cleaning
+Because machine learning models don't work well with NaN, they are dropped from the dataset. Outliers (5% percentile) are trimmed as well.
+
+## Feature engineering
+The purpose of feature engineering is to extract the amenities such as "Elevator", "Doorman", and "Fitness center" in the features column, and turn them into binary variables to investigate their relationships with settling a deal.I first unravelled the list and used textblob to seperate them into phrases.The top ten frequent features are selected and turned into binary variable.
+
+## NLP analysis
+The apartment description are seperated into sentences, phrases and the words. NLTK is used to calculate the polarity and subjectivity of each description with the average of each word. 
+
+## Number of photos 
+Because each photo URL is stored in a nested list in the dataset, I calculated the lenth of each listing's photo URL and replaced null with 0.
+
+## Exploratory data analysis
+With the above variables, I investigated the distribution of each variable and their correlation to each other.
+The variables are not obviously skewed, which leaves me with enough sample data. Some amenities are high correlated with each other, such as Doorman~Wood floor and Doorman~Fitness center. I furthur look into the factors effecting is_deal using machine learning.
+
+## Machine learning
+Four models are implemented in this session: Logistic regression, Decision tree, Random forest and xgboost. All results suggest the number of photos, polarity of apartment description and number of bedrooms have high importance to settling a deal. By comparing the accuracy, precision and recall scores, the result from xgboost is the most ideal one. 
+
+#### See full codes in depository
+https://github.com/JingjingLiang99/Renting-rate-analysis
