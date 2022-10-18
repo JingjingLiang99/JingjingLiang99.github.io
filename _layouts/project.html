@@ -17,20 +17,20 @@
     {% include header.html %}
 <p style="color:black">
 	
-<body style="background-color: white">
+<body style=background-color: "white">
 	
 <!-- Main -->
 <div id="main" class="alt">
 
 <!-- One -->
 <section id="one" class="project">
-	<div class="inner"; style = "color: black !important">
+	<div class="inner"; style = color:"black">
 		<header class="project">
 			<h1 style="color: black;">{{ page.title }}</h1>
       <span style="color: #333333;font-weight:bold ;font-size: 18.0pt;">{{page.description}}</span>
 		</header>
 		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
-		<p style ="color:black !important">{{ content }}</p>
+		<p style = color:"black" !important">{{ content }}</p>
 	</div>
 </section>
 
