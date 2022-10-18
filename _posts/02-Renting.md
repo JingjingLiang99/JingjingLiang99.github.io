@@ -49,7 +49,6 @@ Raw dataset:
 <th><p>latitude</p></th>
 <th><p>listing_id</p></th>
 <th><p>longitude</p></th>
-<th><p>manager_id</p></th>
 <th><p>photos</p></th>
 <th><p>price</p></th>
 <th><p>street_address</p></th>
