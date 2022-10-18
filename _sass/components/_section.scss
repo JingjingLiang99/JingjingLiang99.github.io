@@ -12,6 +12,13 @@
 		}
 	}
 
+	section, article {
+		&.project {
+			background-color:black;
+		}
+	}
+
+
 	header {
 		&.major {
 			width: -moz-max-content;
