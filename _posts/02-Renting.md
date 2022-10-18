@@ -4,7 +4,7 @@ title: Renting Rate Prediction
 image: assets/images/02-Renting-banner.jpg
 description: Text data cleaning and machine learning using Python
 ---
-### Overview
+## Overview
 
 Can text mining apartment discriptions give insight to what renters are caring about their renting choice?
 
@@ -12,7 +12,7 @@ In the real-estate industry, listing page of the apartment is what customers fir
 
 The dataset contains 50k inquiry of a real-estate agency. Each listing has information on the number of bathrooms and bedrooms, apartment description, amenities and photo URL. It has the inquirer's information such as gender, number of times they have followed up, and their expected price. And finally we can see if the deal has been made.
 
-### Outline
+## Outline
 
 -   Data cleaning
 -   NLP on apartment description: Can positive description boost the chance of a deal?
@@ -20,7 +20,7 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 -   Quantify number of photos: Can more number of photos boost the chance of a deal?
 -   Machine learning: How do the above variables affect renting behavior?
 
-### Tools
+## Tools
 
 -   Python
 -   NLTK
@@ -28,6 +28,8 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 -   Pandas
 -   numpy
 -   Matplotlib
+
+## Summary
 
 <div>
 
