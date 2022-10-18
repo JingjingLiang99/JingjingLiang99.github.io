@@ -181,5 +181,5 @@ Four models are implemented in this session: Logistic regression, Decision tree,
 
 ![Xgboost result](/assets/images/Renting-rate-analysis/output_109_0.png)
 
-<h3 id="See full codes in depository" style="color:black">See full codes in depository</h3>
+<h3 id="See full codes in repository" style="color:black">See full codes in repository</h3>
 [Renting rate analysis](https://github.com/JingjingLiang99/Renting-rate-analysis)
