@@ -4,7 +4,7 @@ title: Renting Rate Analysis
 image: assets/images/02-Renting-banner.jpg
 description: Text data cleaning and machine learning using Python
 ---
-## Overview
+<h2 id="Overview" style="color:black">Overview</h2>
 
 Can text mining apartment descriptions give insight to what renters are caring about their renting choice?
 
