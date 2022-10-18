@@ -12,7 +12,7 @@ In the real-estate industry, listing page of the apartment is what customers fir
 
 The dataset contains 50k inquiry of a real-estate agency. Each listing has information on the number of bathrooms and bedrooms, apartment description, amenities and photo URL. It has the inquirer's information such as gender, number of times they have followed up, and their expected price. And finally we can see if the deal has been made.
 
-## Outline
+<h2 id="Outline" style="color:black">Outline</h2>
 
 -   Data cleaning
 -   NLP on apartment description: Can positive description boost the chance of a deal?
@@ -20,7 +20,7 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 -   Quantify number of photos: Can more number of photos boost the chance of a deal?
 -   Machine learning: How do the above variables affect renting behavior?
 
-## Tools
+<h2 id="Tools" style="color:black">Tools</h2>
 
 -   Python
 -   NLTK
@@ -29,11 +29,11 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 -   numpy
 -   Matplotlib
 
-## Summary
+<h2 id="Summary" style="color:black">Summary</h2>
 How many photos the listing has and how positive the description sounds has high importance to making a deal. The marketing team should check the listings without photos or have low positivity score, and using these criteria to promote them more efficiently. 
 The number of bedrooms and bathrooms, and hardwood floors are top amenities that affect customer decision. They should be placed at the front of the tags. 
  
-## Technical process
+<h2 id="Technical Process" style="color:black">Technical Process</h2>
 Raw dataset:
 <div>
 <table class="project">
@@ -158,29 +158,28 @@ Raw dataset:
 </table>
 
 </div>
-
-### Data cleaning
+<h3 id="Data cleaning" style="color:black">Data cleaning</h3>
 Because machine learning models don't work well with NaN, they are dropped from the dataset. Outliers (5% percentile) are trimmed as well.
 
-### Feature engineering
+<h3 id="Feature engineering" style="color:black">Feature engineering</h3>
 The purpose of feature engineering is to extract the amenities such as "Elevator", "Doorman", and "Fitness center" in the features column, and turn them into binary variables to investigate their relationships with settling a deal.I first unravelled the list and used textblob to seperate them into phrases.The top ten frequent features are selected and turned into binary variable.
 
-### NLP analysis
+<h3 id="NLP analysis" style="color:black">NLP analysis</h3>
 The apartment description are seperated into sentences, phrases and the words. NLTK is used to calculate the polarity and subjectivity of each description with the average of each word. 
 
-### Number of photos 
+<h3 id="Number of photos" style="color:black">Number of photos</h3>
 Because each photo URL is stored in a nested list in the dataset, I calculated the lenth of each listing's photo URL and replaced null with 0.
 
-### Exploratory data analysis
+<h3 id="Exploratory data analysis" style="color:black">Exploratory data analysis</h3>
 With the above variables, I investigated the distribution of each variable and their correlation to each other.
 The variables are not obviously skewed, which leaves me with enough sample data. Some amenities are high correlated with each other, such as Doorman to Wood floor and Doorman to Fitness center. I furthur look into the factors effecting deal using machine learning.
 ![Variable distribution](/assets/images/Renting-rate-analysis/output_80_0.png)
 ![Correlation matrix](/assets/images/Renting-rate-analysis/output_82_0.png)
 
-### Machine learning
+<h3 id="Machine learning" style="color:black">Machine learning</h3>
 Four models are implemented in this session: Logistic regression, Decision tree, Random forest and xgboost. All results suggest the number of photos, polarity of apartment description and number of bedrooms have high importance to settling a deal. By comparing the accuracy, precision and recall scores, the result from xgboost is the most ideal one. 
 
 ![Xgboost result](/assets/images/Renting-rate-analysis/output_109_0.png)
 
-#### See full codes in depository
+<h3 id="See full codes in depository" style="color:black">See full codes in depository</h3>
 [Renting rate analysis](https://github.com/JingjingLiang99/Renting-rate-analysis)
