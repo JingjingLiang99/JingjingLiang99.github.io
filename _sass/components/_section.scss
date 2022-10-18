@@ -12,14 +12,6 @@
 		}
 	}
 
-	section, article {
-		&.project {
-			text-align: center;
-			background-color: black;
-		}
-	}
-
-
 	header {
 		&.major {
 			width: -moz-max-content;
@@ -108,13 +100,13 @@
 				letter-spacing: _font(letter-spacing-alt);
 				margin-bottom: 0;
 				text-transform: uppercase;
-				color:black;
+				background-color:black;
 			}
 
 			body.is-ie & {
 				> :first-child {
 					&:after {
-						color: black;
+						background-color: black;
 						max-width: 9em;
 					}
 				}
@@ -122,7 +114,7 @@
 				> h1 {
 					&:after {
 						max-width: 100% !important;
-						color: black;
+						background-color: black;
 					}
 				}
 			}
