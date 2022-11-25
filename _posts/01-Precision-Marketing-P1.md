@@ -114,5 +114,8 @@ clustering_data %>%
 {::options parse_block_html="false" /}
 
 <img src="/assets/images/Marketing_Optimization/customer_demo.png" alt = "Distribution of continuous customer variables" width="200"/>
+<img src="/assets/images/Marketing_Optimization/customer_demo_bar.png" alt = "customer_demo_bar.png" width="200"/>
+<img src="/assets/images/Marketing_Optimization/customer_demo_corr.png" alt = "customer_demo_corr.png" width="200"/>
+
 
 
