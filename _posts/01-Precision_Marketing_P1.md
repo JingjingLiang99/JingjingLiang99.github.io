@@ -88,7 +88,6 @@ The datasets comes from an E-commerce website. There are two main datasets for t
 
 <h3 id="User Demographics" style="color:black">2. User Demographics</h3>
 
-{::options parse_block_html="true" /}
 <details>
 
 ```r
@@ -111,4 +110,3 @@ clustering_data %>%
 </details>
 <br/>
 
-{::options parse_block_html="false" /}
