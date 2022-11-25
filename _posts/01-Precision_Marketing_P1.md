@@ -88,7 +88,7 @@ The datasets comes from an E-commerce website. There are two main datasets for t
 
 <h3 id="User Demographics" style="color:black">2. User Demographics</h3>
 
-<detail>
+<details>
 
 ```r
 # Distribution of all continuous variables
@@ -107,6 +107,6 @@ clustering_data %>%
     panel.background = element_blank())+
     scale_fill_manual(values =  "red")
 ```
-</detail>
+</details>
 <br/>
 
