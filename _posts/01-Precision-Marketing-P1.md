@@ -108,14 +108,224 @@ clustering_data %>%
     panel.grid.minor = element_blank(),
     panel.border = element_blank(),
     panel.background = element_blank())
+
+# Distribution of categorical variables
+g1 <-ggplot(clustering_data, aes(x=reorder(Education, Education, function(x)-length(x)))) +
+    geom_bar(fill='grey', width = 0.5) +  labs(x='Education')+
+    theme(panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank())
+
+g2 <- ggplot(clustering_data, aes(x=reorder(Marital_Status, Marital_Status, function(x)-length(x)))) +
+geom_bar(fill='grey', width = 0.5) +  labs(x='Marital_Status')+
+    theme(panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank())
+
+g3 <- ggplot(clustering_data, aes(x=reorder(Teenhome, Teenhome, function(x)-length(x)))) +
+geom_bar(fill='grey', width = 0.5) +  labs(x='Teenhome')+
+    theme(panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank())
+
+g4 <- ggplot(clustering_data, aes(x=reorder(Kidhome, Kidhome, function(x)-length(x)))) +
+geom_bar(fill='grey', width = 0.5) +  labs(x='Kidhome')+
+    theme(panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank())
+
+
+g_bar <- ggarrange(g1, g2, g3, g4,
+          ncol = 2, nrow = 2)
+
+annotate_figure(g_bar, top = text_grob("Bar graph of categorical customer data", 
+                size = 14,hjust = 0.5))
+         
+# Correlation plot
+##Data cleaning and feature engineering
+corr_data <- clustering_data %>%
+  mutate(family_size = Teenhome + Kidhome) %>%
+  mutate(Education = case_when(
+    Education == 'PhD'~5,
+    Education == 'Master'~4,
+    Education == '2n Cycle'~4,
+    Education == 'Basic' ~3,
+    Education == 'Graduation'~2
+  )) %>%
+  mutate(Dt_Customer = dmy(Dt_Customer))%>%
+  mutate(tenure = as.numeric(Sys.Date() - Dt_Customer))%>%
+  mutate(age = year(Sys.Date()) - Year_Birth)%>%
+  select(age, Education, Income, Recency, starts_with("Mnt"),starts_with("Num"), tenure, family_size)
+  
+corr1 <- corrplot(cor(corr_data),       
+         method = "color", 
+         type = "full",   
+         diag = FALSE, 
+         tl.col = "black",
+         tl.cex = 0.7,
+         title = "Correlation plot of customer variables",
+         bg = "white",    
+         mar=c(0,0,1,0),
+         col = NULL)  
 ```
 </details>
 <br/>
 {::options parse_block_html="false" /}
 
 <img src="/assets/images/Marketing_Optimization/customer_demo.png" alt = "Distribution of continuous customer variables" width="600"/>
-<img src="/assets/images/Marketing_Optimization/customer_demo_bar.png" alt = "customer_demo_bar.png" width="600"/>
-<img src="/assets/images/Marketing_Optimization/customer_demo_corr.png" alt = "customer_demo_corr.png" width="600"/>
+<img src="/assets/images/Marketing_Optimization/customer_demo_bar.png" alt = "customer_demo_bar" width="600"/>
+<img src="/assets/images/Marketing_Optimization/customer_demo_corr.png" alt = "customer_demo_corr" width="600"/>
 
+<h3 id="Email characteristics" style="color:black">3. Email characteristics</h3>
+Advertisements that customers previously received and word count of the advertisement are mostly normally distributed. A majority of campaign type is Campaign type 2, while email source is more evenly distributed. Total links contained in the ad concentrate around 10. When distribution of these variables are separated by click or not click, The number of past communications and campaign type seem to be good classifiers.
 
+{::options parse_block_html="true" /}
+<details>
 
+```r
+# Distribution
+Ads_data %>%
+  keep(is.numeric) %>%
+  gather() %>% 
+  ggplot(aes(value)) +
+    facet_wrap(~ key, scales = "free") +
+    ggtitle('Distribution of Ads variables')+
+    theme(plot.title = element_text(hjust = 0.5))+
+    theme(panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank())+  
+    geom_histogram(alpha = 0.3, fill="blue")
+
+# Potential classifiers
+## Word count
+g_1 <- ggplot(Ads_data, aes(x = Word_Count, fill = Email_Status)) + # Set x and y aesthetics
+    geom_density(alpha = 0.3,show.legend = FALSE, color=NA) + # Set geom density for density plot
+    theme_bw() + # Set theme bw
+    theme(text = element_text(size = 9))+
+    theme(panel.grid.major = element_blank(), # Turn of the background grid
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+    labs(x = "Word_Count",  # Set plot labels
+    fill = "Email_Status")+
+    #title = "Word_Count v Email_Status") +
+    scale_fill_manual(values = c("0" = "red", "1" = "blue"), # Manually set fill values
+    labels = c("0" = "Didn't click", "1" = "Clicked"))
+
+## Total past communications
+g_2 <- ggplot(Ads_data, aes(x = Total_Past_Communications, fill = Email_Status)) + # Set x and y aesthetics
+    geom_density(alpha = 0.3,show.legend = FALSE, color=NA) + # Set geom density for density plot
+    theme_bw() + # Set theme bw
+    theme(text = element_text(size = 9))+
+    theme(panel.grid.major = element_blank(), # Turn of the background grid
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+    labs(x = "Total_Past_Communications",  # Set plot labels
+    fill = "Email_Status")+
+    #title = "Total_Past_Communications v Email_Status") +
+    scale_fill_manual(values = c("0" = "red", "1" = "blue"), # Manually set fill values
+    labels = c("0" = "Didn't click", "1" = "Clicked"))
+
+## Total Links
+g_3 <- ggplot(Ads_data, aes(x = Total_Links, fill = Email_Status)) + # Set x and y aesthetics
+    geom_density(alpha = 0.3,show.legend = FALSE, color=NA) + # Set geom density for density plot
+    theme_bw() + # Set theme bw
+    theme(text = element_text(size = 9))+
+    theme(panel.grid.major = element_blank(), # Turn of the background grid
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+    labs(x = "Total_Links",  # Set plot labels
+    fill = "Email_Status")+
+    #title = "Total_Links v Email_Status") +
+    scale_fill_manual(values = c("0" = "red", "1" = "blue"), # Manually set fill values
+    labels = c("0" = "Didn't click", "1" = "Clicked"))
+
+## Total images
+g_4 <- ggplot(Ads_data, aes(x = Total_Images, fill = Email_Status)) + # Set x and y aesthetics
+    geom_density(alpha = 0.3,show.legend = FALSE, color=NA) + # Set geom density for density plot
+    theme_bw() + # Set theme bw
+    theme(text = element_text(size = 9))+
+    theme(panel.grid.major = element_blank(), # Turn of the background grid
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+    labs(x = "Total_Images",  # Set plot labels
+    fill = "Email_Status")+
+    #title = "Total_Images v Email_Status") +
+    scale_fill_manual(values = c("0" = "red", "1" = "blue"), # Manually set fill values
+    labels = c("0" = "Didn't click", "1" = "Clicked"))
+
+## Topic hotness
+g_5 <- ggplot(Ads_data, aes(x = Subject_Hotness_Score, fill = Email_Status)) + # Set x and y aesthetics
+    geom_density(alpha = 0.3,show.legend = FALSE, color=NA) + # Set geom density for density plot
+    theme_bw() + # Set theme bw
+    theme(text = element_text(size = 9))+
+    theme(panel.grid.major = element_blank(), # Turn of the background grid
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+    labs(x = "Subject_Hotness_Score",  # Set plot labels
+    fill = "Email_Status")+
+    #title = "Subject_Hotness_Score v Email_Status") +
+    scale_fill_manual(values = c("0" = "red", "1" = "blue"), # Manually set fill values
+    labels = c("0" = "Didn't click", "1" = "Clicked"))
+
+# 3.2.2 Bar for categorical variables
+g_6 <- Ads_data %>%
+  group_by(Email_Type, Email_Status) %>%
+  count()%>%
+  ggplot(., aes(fill=Email_Status, y=n, x=Email_Type)) + 
+    theme(text = element_text(size = 9))+
+    theme(panel.grid.major = element_blank(), # Turn of the background grid
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+    geom_bar(position="dodge", stat="identity", alpha = 0.3,show.legend = FALSE)+
+    scale_fill_manual(values = c("0" = "red", "1" = "blue"), # Manually set fill values
+    labels = c("0" = "Didn't click", "1" = "Clicked"))
+
+g_7 <- Ads_data %>%
+  group_by(Email_Campaign_Type, Email_Status) %>%
+  count()%>%
+  ggplot(., aes(fill=Email_Status, y=n, x=Email_Campaign_Type)) +
+    theme(text = element_text(size = 9))+
+    theme(panel.grid.major = element_blank(), # Turn of the background grid
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+    geom_bar(position="dodge", stat="identity", alpha = 0.3,show.legend = FALSE)+
+    scale_fill_manual(values = c("0" = "red", "1" = "blue"), # Manually set fill values
+    labels = c("0" = "Didn't click", "1" = "Clicked"))
+
+g_8 <- Ads_data %>%
+  group_by(Customer_Location, Email_Status) %>%
+  count()%>%
+  ggplot(., aes(fill=Email_Status, y=n, x=Customer_Location)) + 
+    theme(text = element_text(size = 9))+
+    theme(panel.grid.major = element_blank(), # Turn of the background grid
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+    geom_bar(position="dodge", stat="identity", alpha = 0.3)+
+    scale_fill_manual(values = c("0" = "red", "1" = "blue"), # Manually set fill values
+    labels = c("0" = "Didn't click", "1" = "Clicked"))
+
+g_pred <- ggarrange(g_1, g_2, g_3, g_4, g_5, g_6, g_7, g_8,
+          ncol = 3, nrow = 3)
+
+annotate_figure(g_pred, top = text_grob("Potential classifiers", 
+                size = 14,hjust = 0.5))
+```
+</details>
+<br/>
+{::options parse_block_html="false" /}
+  
+<img src="/assets/images/Marketing_Optimization/mkt_distribution.png" alt = "mkt_distribution" width="600"/>
+<img src="/assets/images/Marketing_Optimization/potential_classifier.png" alt = "potential_classifier" width="600"/>
