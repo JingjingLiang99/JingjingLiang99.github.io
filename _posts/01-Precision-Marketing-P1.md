@@ -33,7 +33,7 @@ The datasets comes from an E-commerce website. There are two main datasets for t
 
 <h3 id="Variable Description" style="color:black">1. Variable Description</h3>
 
-**clustering_data**
+<h4 id="Clustering data" style="color:black">Clustering data</h4>
 
 `ID`:Customer unique identifier
 
@@ -66,7 +66,7 @@ The datasets comes from an E-commerce website. There are two main datasets for t
 `NumWebVisitsMonth`: Times a customer has visited the website per month
 
 
-**ads_data**
+<h4 id="Ads data" style="color:black">Ads data</h4>
 
 `Email_Type`: 1 indicates Newsletter and 2 indicates promotion information
 
