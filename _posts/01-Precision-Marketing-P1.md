@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Advertising Budgets Optimization 
-image: assets/images/ads_opt.jpg
+image: assets/images/Marketing_Optimization/mkt_opt.jpg
 description: Part 1 Exploratory Data Analysis
 ---
 <h2 id="Motivation" style="color:black">Motivation</h2>
@@ -112,5 +112,5 @@ clustering_data %>%
 </details>
 <br/>
 {::options parse_block_html="false" /}
-![Distribution of continuous customer variables](/assets/images/Ads_Optimization/customer_demo.png)
+![Distribution of continuous customer variables](/assets/images/Marketing_Optimization/customer_demo.png)
 
