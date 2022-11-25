@@ -27,7 +27,9 @@ socials:
 
 # build settings
 markdown: kramdown
-
+kramdown:
+  parse_block_html: true
+  
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
