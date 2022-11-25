@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Advertising Budgets Optimization 
-image: assets/images/ads_opt.jpg
+image: assets/images/ads_opt.png
 description: Part 1 Exploratory Data Analysis
 ---
 <h2 id="Motivation" style="color:black">Motivation</h2>
@@ -87,7 +87,10 @@ The datasets comes from an E-commerce website. There are two main datasets for t
 `Total_Links`: Total links contained in the email.
 
 <h3 id="User Demographics" style="color:black">2. User Demographics</h3>
+From the distribution plot, most customers are middle-aged and above. In terms of money spent on different categories of food, Gold Products has higher density in each consumption bin. Spend on different categories might be different for different ages, family size, education level, etc., and serve as a good clustering variable. Number of purchases by store and web also show different patterns, and might suggest different consuming habits.
 
+According to the correlation plot, individuals with higher income visits the e-commerce website fewer times. And family with bigger size spend less on meat products, but they visit the websites more times. Spend on fish is positively correlated with that on sweet products.
+{::options parse_block_html="true" /}
 <details>
 
 ```r
@@ -104,9 +107,8 @@ clustering_data %>%
     theme(panel.grid.major = element_blank(), 
     panel.grid.minor = element_blank(),
     panel.border = element_blank(),
-    panel.background = element_blank())+
-    scale_fill_manual(values =  "red")
+    panel.background = element_blank())
 ```
 </details>
 <br/>
-
+{::options parse_block_html="false" /}
