@@ -2,7 +2,7 @@
 layout: project
 title: Advertising Budgets Optimization 
 image: assets/images/ads_opt.jpg
-description: Part 1: Exploratory Data Analysis
+description: Part 1 Exploratory Data Analysis
 ---
 <h2 id="Motivation" style="color:black">Motivation</h2>
 Companies across industries are using analytics to understand their customers better. By having a clear image of who their customers are, companies can implement personalized strategies and increase conversion rates.
