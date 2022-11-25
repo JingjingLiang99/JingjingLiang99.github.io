@@ -112,3 +112,5 @@ clustering_data %>%
 </details>
 <br/>
 {::options parse_block_html="false" /}
+![Distribution of continuous customer variables](/assets/images/Ads_Optimization/customer_demo.png)
+
