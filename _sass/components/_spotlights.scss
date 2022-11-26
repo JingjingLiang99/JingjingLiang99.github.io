@@ -33,7 +33,7 @@
 				}
 
 				&:before {
-					background: transparentize(_palette(bg), 0.1);
+					background: transparentize(_palette(bg), 0.5);
 					content: '';
 					display: block;
 					height: 100%;
