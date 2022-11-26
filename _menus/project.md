@@ -32,7 +32,7 @@ nav-menu: true
 			</header>
 			<p>Recommender systems: World wide temperature visualization using tableau. </p>
 			<ul class="actions">
-				<li><a href="https://jingjingliang99.github.io/_posts/03_Global_warming.html)](https://jingjingliang99.github.io/_posts/03_Global_warming.html" class="button">Learn more</a></li>
+				<li><a href="https://jingjingliang99.github.io/_posts/03_Global_warming.html" class="button">Learn more</a></li>
 			</ul>
 		</div>
 	</div>
