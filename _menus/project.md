@@ -30,7 +30,7 @@ nav-menu: true
 			<header class="major">
 				<h3>Global warming visualization</h3>
 			</header>
-			<p>Recommender systems: World wide temperature visualization using tableau. </p>
+			<p>World wide temperature visualization using tableau. </p>
 			<ul class="actions">
 				<li><a href="https://jingjingliang99.github.io/_posts/03_Global_warming.html" class="button">Learn more</a></li>
 			</ul>
