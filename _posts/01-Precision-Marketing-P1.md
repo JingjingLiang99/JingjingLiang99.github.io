@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Marketing Budgets Optimization 
+title: Marketing Budgets Optimization-P1
 image: assets/images/Marketing_Optimization/mkt_opt.jpg
 description: Part 1 Exploratory Data Analysis
 ---
