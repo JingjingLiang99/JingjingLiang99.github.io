@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Marketing Budgets Optimization 
+title: Marketing Budgets Optimization-P3
 image: assets/images/Marketing_Optimization/mkt_opt_pt2.jpg
 description: Part 3 CTR analysis using XGboost and Neural networks
 ---
