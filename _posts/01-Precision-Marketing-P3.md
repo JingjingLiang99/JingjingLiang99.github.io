@@ -64,6 +64,9 @@ xgb.plot.importance(imp_mat, top_n = 10)
 <br/>
 {::options parse_block_html="false" /}
 
+<img src="/assets/images/Marketing_Optimization/Email_feature.png" alt = "Email_feature.png" width="600"/>
+
+
 <h3 id="2. XGboost on Customer demographics" style="color:black">2. XGboost on Customer demographics</h3>
 Another XGboost model with customer demographic variables is built to analyze the customer features importance. The feature importance results suggest tenure, recency, and spent on wines and meat has high influence of customers willingness to click. The XGboost models achieves a sensitivity of 0.49 and an overall accuracy of 0.86.
 
@@ -128,7 +131,9 @@ xgb.plot.importance(imp_mat1, top_n = 10)
 </details>
 <br/>
 {::options parse_block_html="false" /}
-  
+
+<img src="/assets/images/Marketing_Optimization/Customer_feature.png" alt = "Customer_feature.png" width="600"/>
+
 <h3 id="3. Neural network approach" style="color:black">3. Neural network approach</h3>
 As CTR prediction can be approached by machine learning methods or deep learning methods (Yang & Zhai, 2022), I developed another neural network model with 1 layer and 6 units. The model performance improved compare to XGboost models with a sensitivity score of 0.70. Sensitivity is the more important indicator in this case since we are dealing with an imbalanced dataset with few positive responses.
 
@@ -193,8 +198,12 @@ legend('bottomright', c('neural network', 'xgboost'), lty=1, col=c('red','blue')
 <br/>
 {::options parse_block_html="false" /}
 
+<img src="/assets/images/Marketing_Optimization/Email_feature.png" alt = "lift_chart.png" width="600"/>
+
 With the XGboost built on training dataset, we can build an SHAPley explainer that shows how features contributing to push the model output from the base value (the average model output over the training dataset we passed). In other words, if we adjust accordingly, we can improve individual’s chance to click on an advertisement. We are using the ads data from initial campaign wave to improve our CTR performance in subsequent waves. Take the first customer in test dataset as an example, their predicted CTR will increase as we increase the hotness score of our email topic.
-  
+
+<img src="/assets/images/Marketing_Optimization/sharpley.png" alt = "sharpley" width="600"/>
+
 <h2 id="Discussion" style="color:black">Discussion</h2>
 
 As indicated from the customer segmentation and CTR distribution chart, customer group 1, the group with highest tenure and conversion rate, are the website’s loyal customers and main force for this campaign. The website can carry our more targeted activities to prolong their user lifetime. The predictive models suggest the website can attach more discount coupons in their advertisement. As for budget allocation adjustment, it can allocate more budget to customer group 1, and if it is considering expanding the target audience, it can include customers that have high spend on meat products as it was an important factor contributing to positive CTR. The website could design bundle promotion with wine and meat products, too.
