@@ -10,6 +10,7 @@ Using k-medoids with 6 clusters, the customer groups are similar to each other b
 
 {::options parse_block_html="true" /}
 <details>
+  
 ```r
 pam1 <- pam(scaled_clust, 6, metric = "euclidean", stand = FALSE) #Using dataset with categorical variables
 pam.res <- pam(scaled_clust, 6)
@@ -40,14 +41,7 @@ g_heat_2 <- ggplot(data = center_reshape1, # Set dataset
                        guide = "colourbar", # Set color bar
                        aesthetics = "fill") + # Select aesthetics to apply
   coord_flip() # Rotate plot to view names clearly
-```
-</details>
-<br/>
-{::options parse_block_html="false" /}
 
-{::options parse_block_html="true" /}
-<details>
-```r
 center_reshape2 <- gather(heat_df, features, values, Education:Marital_Status)
 g_heat_3 <- ggplot(data = center_reshape2, # Set dataset
                    aes(x = features, y = clust_num, fill = values)) + # Set aesthetics
@@ -69,6 +63,7 @@ g_heat_3 <- ggplot(data = center_reshape2, # Set dataset
 </details>
 <br/>
 {::options parse_block_html="false" /}
+  
 <img src="/assets/images/Marketing_Optimization/cluster.png" alt = "cluster" width="600"/>
 <img src="/assets/images/Marketing_Optimization/cluster_1.png" alt = "cluster_1" width="600"/>
   
@@ -76,6 +71,7 @@ g_heat_3 <- ggplot(data = center_reshape2, # Set dataset
 During the advertisement delivering process, the algorithm first selects 10 customers from each group and collect their click status. Then it builds a CTR information set for each customer group as a beta distribution with parameter numbers of customers clicked and number of customer that did not click. Whenever it is deciding which customer group to choose, it draws a sample CTR from each distribution and chooses the group with highest drawn CTR. After the delivery, it updates the CTR information set. In this way, customer group with higher CTR with be chosen more frequently, thus having a smaller confidence interval. From the distribution chart, we can see customer group 1 with a CTR of 0.16 got chosen 742 times our of 1000 iterations. group 3 with a CTR of 0.03 could also get chosen, but much less frequently than the other groups.
   
 {::options parse_block_html="true" /}
+
 <details>
 ```r
 set.seed(2022)
