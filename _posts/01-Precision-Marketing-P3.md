@@ -198,7 +198,7 @@ legend('bottomright', c('neural network', 'xgboost'), lty=1, col=c('red','blue')
 <br/>
 {::options parse_block_html="false" /}
 
-<img src="/assets/images/Marketing_Optimization/Email_feature.png" alt = "lift_chart.png" width="600"/>
+<img src="/assets/images/Marketing_Optimization/lift_chart.png" alt = "lift_chart.png" width="600"/>
 
 With the XGboost built on training dataset, we can build an SHAPley explainer that shows how features contributing to push the model output from the base value (the average model output over the training dataset we passed). In other words, if we adjust accordingly, we can improve individual’s chance to click on an advertisement. We are using the ads data from initial campaign wave to improve our CTR performance in subsequent waves. Take the first customer in test dataset as an example, their predicted CTR will increase as we increase the hotness score of our email topic.
 
