@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Advertising Budgets Optimization 
+title: Marketing Budgets Optimization 
 image: assets/images/Marketing_Optimization/mkt_opt_pt2.jpg
 description: Part 2 Customer segmentation and Thompson sampling
 ---
