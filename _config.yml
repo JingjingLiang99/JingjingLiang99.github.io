@@ -1,14 +1,12 @@
 # site settings
 title: Jingjing
 subtitle: Liang
-email: jliang2@nd.edu
+email: jliang2@alumni.nd.edu
 description:  Data cruncher, Passionate explorer and much more .
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
-city: South Bend
-state: IN
-zip_code: 46637
+city: Chicago
 country: United States of America
 phone: (574) 314-4849
 
