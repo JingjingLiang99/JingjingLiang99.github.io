@@ -6,7 +6,9 @@ description: Part 2 Customer segmentation and Thompson sampling
 ---
 <h2 id="Customer Segmentation" style="color:black">Customer Segmentation</h2>
 
-Using k-medoids with 6 clusters, the customer groups are similar to each other but with slightly different attributes. Group 1 has high tenure and family size. They have more purchases and visit frequently. Therefore, they are perceived to be loyal customers of the website. Another two groups that are worth noticing are group 3 and group 6. Group 3 have low tenure, visit frequently but have low purchase or spends. Group 6 are also new users, but they have not used our website recently. Therefore, these two groups are eliminated when selecting the target audience for the advertisement campaign.
+Using k-medoids clustering with 6 clusters, we identified customer groups that are similar in nature but exhibit slight differences in their attributes. Group 1, for example, is characterized by high tenure and large family size. They make frequent purchases and visit the website regularly, indicating that they are likely loyal customers.
+
+Two other groups, Group 3 and Group 6, also stand out. Group 3 consists of customers with low tenure who visit the website frequently but have low purchase rates and spending levels. Group 6, on the other hand, includes new users who have not engaged with the website recently. Given these characteristics, Groups 3 and 6 are excluded from the target audience for the advertisement campaign, as their engagement and spending behaviors do not align with our campaign objectives.
 
 {::options parse_block_html="true" /}
 <details>
@@ -68,7 +70,11 @@ g_heat_3 <- ggplot(data = center_reshape2, # Set dataset
 <img src="/assets/images/Marketing_Optimization/cluster_1.png" alt = "cluster_1" width="600"/>
   
 <h2 id="Optimization strategy" style="color:black">Optimization strategy</h2>
-During the advertisement delivering process, the Thompson sampling algorithm first selects 10 customers from each group and collect their click status. Then it builds a CTR information set for each customer group as a beta distribution with parameter numbers of customers clicked and number of customer that did not click. Whenever it is deciding which customer group to choose, it draws a sample CTR from each distribution and chooses the group with highest drawn CTR. After the delivery, it updates the CTR information set. In this way, customer group with higher CTR with be chosen more frequently, thus having a smaller confidence interval. From the distribution chart, we can see customer group 1 with a CTR of 0.16 got chosen 742 times our of 1000 iterations. group 3 with a CTR of 0.03 could also get chosen, but much less frequently than the other groups.
+During the advertisement delivery process, the Thompson sampling algorithm is used to optimize the selection of customer groups. Initially, the algorithm selects 10 customers from each group and records their click status. It then constructs a CTR information set for each customer group, modeled as a beta distribution with parameters based on the number of customers who clicked and those who did not.
+
+When deciding which customer group to target next, the algorithm draws a sample CTR from each group's distribution and selects the group with the highest sampled CTR. After delivering the ads, the CTR information set is updated accordingly. This approach ensures that customer groups with higher CTRs are selected more frequently, leading to narrower confidence intervals for those groups.
+
+From the distribution chart, we observe that Group 1, with a CTR of 0.16, was chosen 742 times out of 1,000 iterations. Although Group 3, with a CTR of 0.03, was also selected, it occurred much less frequently compared to the other groups.
   
 {::options parse_block_html="true" /}
 
