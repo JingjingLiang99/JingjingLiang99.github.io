@@ -13,6 +13,9 @@ During a campaign, maximizing the return on investment is crucial, meaning that 
 
 Post-campaign analysis is equally important, as it helps identify the features that drive success, enabling marketers to refine their strategies for future campaigns. Given that ad campaigns often unfold in waves, each wave provides an opportunity to iterate and enhance ad characteristics. By leveraging insights from the first wave, subsequent campaign elements can be adjusted to achieve higher CTRs and overall better performance.
 
+Even though Google Ads and most programmatic platforms have already automated the process with strategy such as PerformanceMax and Customer Lookalike, it was still an interesting learning for me to combine what I learned in Machine Learning classes with the underlying ads bidding mechanism :)
+
+
 <h2 id="Problem framing" style="color:black">Problem framing</h2>
 
 Four questions need to be analyzed for optimizing companies' marketing budget:
