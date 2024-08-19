@@ -6,11 +6,11 @@ description: Text data cleaning and machine learning using Python
 ---
 <h2 id="Overview" style="color:black">Overview</h2>
 
-Can text mining apartment descriptions give insight to what renters are caring about their renting choice?
+Can Text Mining Apartment Descriptions Reveal Renters' Priorities?
 
-In the real-estate industry, listing page of the apartment is what customers first see. How good it looks digitally and how attractive it reads has been a prominent role in a customer's decision. Real-estate businesses are looking to listing page elements to understand their customers' desires and experiences to identify their areas of opportunities.
+In the real estate industry, an apartment's listing page is often the first impression a potential renter gets. The digital appeal and the attractiveness of the listing play a significant role in a customer's decision-making process. Real estate businesses are increasingly focusing on the elements of listing pages to better understand their customers' desires and experiences, aiming to identify opportunities for improvement.
 
-The dataset contains 50k inquiry of a real-estate agency. Each listing has information on the number of bathrooms and bedrooms, apartment description, amenities and photo URL. It has the inquirer's information such as gender, number of times they have followed up, and their expected price. And finally we can see if the deal has been made.
+The dataset in question contains 50,000 inquiries from a real estate agency. Each listing includes details such as the number of bathrooms and bedrooms, a description of the apartment, available amenities, and a photo URL. Additionally, it provides information about the inquirer, including their gender, the number of follow-ups, their expected price, and whether a deal was ultimately made.
 
 <h2 id="Outline" style="color:black">Outline</h2>
 
@@ -30,8 +30,9 @@ The dataset contains 50k inquiry of a real-estate agency. Each listing has infor
 -   Matplotlib
 
 <h2 id="Summary" style="color:black">Summary</h2>
-How many photos the listing has and how positive the description sounds has high importance to making a deal. The marketing team should check the listings without photos or have low positivity score, and using these criteria to promote them more efficiently. 
-The number of bedrooms and bathrooms, and hardwood floors are top amenities that affect customer decision. They should be placed at the front of the tags. 
+The number of photos in a listing and the positivity of the description play a significant role in closing a deal. Listings with fewer photos or lower positivity scores should be prioritized by the marketing team for more efficient promotion.
+
+Additionally, the number of bedrooms and bathrooms, along with amenities like hardwood floors, are top factors influencing customer decisions. These key features should be highlighted prominently at the beginning of the listing tags.
  
 <h2 id="Technical Process" style="color:black">Technical Process</h2>
 Raw dataset:
@@ -159,25 +160,24 @@ Raw dataset:
 
 </div>
 <h3 id="Data cleaning" style="color:black">Data cleaning</h3>
-Because machine learning models don't work well with NaN, they are dropped from the dataset. Outliers (5% percentile) are trimmed as well.
+Since machine learning models don't handle NaN values effectively, these were removed from the dataset. Additionally, outliers in the 5th percentile were trimmed to ensure cleaner data for analysis.
 
 <h3 id="Feature engineering" style="color:black">Feature engineering</h3>
-The purpose of feature engineering is to extract the amenities such as "Elevator", "Doorman", and "Fitness center" in the features column, and turn them into binary variables to investigate their relationships with settling a deal.I first unravelled the list and used textblob to separate them into phrases.The top ten frequent features are selected and turned into binary variable.
+The goal of feature engineering is to extract specific amenities such as "Elevator," "Doorman," and "Fitness Center" from the features column and convert them into binary variables to analyze their impact on finalizing a deal. I began by unraveling the list of amenities and used TextBlob to separate them into individual phrases. The top ten most frequent features were then selected and transformed into binary variables for further analysis.
 
 <h3 id="NLP analysis" style="color:black">NLP analysis</h3>
-The apartment description are separated into sentences, phrases and the words. NLTK is used to calculate the polarity and subjectivity of each description with the average of each word. 
+Apartment descriptions are segmented into sentences, phrases, and words. NLTK is employed to calculate the polarity and subjectivity of each description, using the average values for each word.
 
 <h3 id="Number of photos" style="color:black">Number of photos</h3>
 Because each photo URL is stored in a nested list in the dataset, I calculated the length of each listing's photo URL and replaced null with 0.
 
 <h3 id="Exploratory data analysis" style="color:black">Exploratory data analysis</h3>
-With the above variables, I investigated the distribution of each variable and their correlation to each other.
-The variables are not obviously skewed, which leaves me with enough sample data. Some amenities are high correlated with each other, such as Doorman to Wood floor and Doorman to Fitness center. I further look into the factors effecting deal using machine learning.
+With the above variables, I examined the distribution and correlations of each variable. The variables do not show significant skewness, providing a sufficient sample size for analysis. Some amenities, such as "Doorman," "Wood Floor," and "Fitness Center," exhibit high correlations with each other. I then proceeded to investigate the factors affecting the likelihood of closing a deal using machine learning techniques.
 ![Variable distribution](/assets/images/Renting-rate-analysis/output_80_0.png)
 ![Correlation matrix](/assets/images/Renting-rate-analysis/output_82_0.png)
 
 <h3 id="Machine learning" style="color:black">Machine learning</h3>
-Four models are implemented in this session: Logistic regression, Decision tree, Random forest and xgboost. All results suggest the number of photos, polarity of apartment description and number of bedrooms have high importance to settling a deal. By comparing the accuracy, precision and recall scores, the result from xgboost is the most ideal one. 
+Four models were implemented: Logistic Regression, Decision Tree, Random Forest, and XGBoost. All models indicated that the number of photos, the polarity of the apartment description, and the number of bedrooms are crucial factors in closing a deal. Among these models, XGBoost provided the most ideal results, as evidenced by its superior accuracy, precision, and recall scores.
 
 ![Xgboost result](/assets/images/Renting-rate-analysis/output_109_0.png)
 
