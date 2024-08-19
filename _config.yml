@@ -8,7 +8,6 @@ url: # the base hostname & protocol for your site
 author:
 city: Chicago
 country: United States of America
-phone: (574) 314-4849
 
 # homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
