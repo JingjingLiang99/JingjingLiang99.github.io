@@ -8,7 +8,7 @@ description: Web scraping using Selenium and Tableau visualization
 The project objective was to scrape restaurant information from TripAdvisor, including details such as name, price range, location, score, reviews, number of comments, and cuisine features. To achieve this, I collected URLs for the top 120 restaurants using Selenium to capture all <a href> attributes within <div> elements with the data-test-target "restaurant" list. 
 ![Website Structure](/assets/images/Chicago/website_structure.png)
 
-  The script was designed to automatically click through each page to extract detailed information like location, top reviews, scores, and number of reviews. 
+  The script was designed to automatically click through each page to extract detailed information like location, top reviews, scores, and number of reviews. I then leveraged NLP to determine the sentiment for each review and calculate the average sentiment across all reviews.
 ![Website Data](/assets/images/Chicago/website_data.png)
 
 During the data cleaning process, I unlisted tuples and lists, used regex to extract restaurant scores and the number of reviews, and conducted one-hot encoding on cuisine features. Additionally, I performed geocoding on the restaurant addresses using the Google Cloud Map API to enhance the dataset for visual analysis exploring top restaurant characteristics.
